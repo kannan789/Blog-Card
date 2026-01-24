@@ -13,34 +13,53 @@
             width: 384px;
             height: 522px;
             display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin: 0 auto;
             top: 50%;
             background-color: hsl(0, 0%, 100%);
             border-radius: 20px;
             padding: 24px;
         }
+
+        .card-img {
+            width: 100%;
+        }
+
+        .card-title {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .title-txt {
+            padding: 5px 10px;
+            background-color: hsl(47, 88%, 63%);
+            font-weight: bold;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
 
     <div class="card-container">
-        <div>
-             <img src="assets/illustration-article.svg" width="336" height="200" >
+        <div class="card-img">
+             <img src="assets/illustration-article.svg" width="" height="200" >
         </div>
-        <div>
-            <div>Learning</div>
+        <div class="card-title">
+            <div class="title-txt">Learning</div>
             <div>Published 21 Dec 2023</div>
         </div>
-        <div>
-            <div>HTML & CSS foundations</div>
+        <div class="card-details">
+            <div class="detail-topic">HTML & CSS foundations</div>
 
             <div> These languages are the backbone of every website, defining structure
                 , content and presentation
             </div>
             
         </div>
-        <div>
-            <div><img src="assets/image-avatar.webp" width="" height=""></div>
+        <div class="card-profile">
+            <div><img src="assets/image-avatar.webp" width="25" height="25"></div>
             <div>Greg Hooper</div>         
         </div>
     </div>
