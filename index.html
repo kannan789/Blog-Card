@@ -7,26 +7,30 @@
     <style>
         body {
             background-color: hsl(47, 88%, 63%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .card-container {
-            width: 384px;
-            height: 522px;
+            width: 350px;
+            height: 425px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin: 0 auto;
-            top: 50%;
+            row-gap: 15px;
+            /* margin: auto; */
+            /* top: 50%;
+            transform: translateY(calc(50%-200px)); */
             background-color: hsl(0, 0%, 100%);
             border-radius: 20px;
             padding: 24px;
         }
 
         .card-img {
-            width: 100%;
+            width: 300px;
         }
 
-        .card-title {
+        .card-title, .card-details {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -36,7 +40,23 @@
             padding: 5px 10px;
             background-color: hsl(47, 88%, 63%);
             font-weight: bold;
-            display: inline-block;
+            display: inline-block!important;
+            width: 18%;
+        }
+
+        .pub-info {
+            font-size: 14px;
+        }
+
+        .detail-topic {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-profile {
+            display: flex;
+            gap: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -48,7 +68,7 @@
         </div>
         <div class="card-title">
             <div class="title-txt">Learning</div>
-            <div>Published 21 Dec 2023</div>
+            <div class="pub-info">Published 21 Dec 2023</div>
         </div>
         <div class="card-details">
             <div class="detail-topic">HTML & CSS foundations</div>
